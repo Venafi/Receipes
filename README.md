@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This PowerShell script automates the creation of cloud providers and cloud keystores within a Venafi platform. It utilizes GraphQL mutations to interact with the Venafi API and reads configuration data from a provided CSV file.
+This PowerShell script automates the creation of cloud providers and cloud keystores within a Venafi platform. It utilizes GraphQL mutations to interact with the Venafi platform and reads configuration data from a provided CSV file.
 
 ## Author
 
