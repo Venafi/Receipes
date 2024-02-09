@@ -24,7 +24,8 @@ None
 3. Run the script with the following parameters:
 
    ```powershell
-   ./CreateCP-KS.ps1 -ApiUrl "[https://api.venafi.cloud/graphql](https://api.venafi.cloud/graphql)" -TPPLApiKey "your_api_key" -CsvPath "path/to/your/data.csv"
+   ./CreateCP-KS.ps1 -ApiUrl "https://api.venafi.cloud/graphql" -TPPLApiKey "your_api_key" -CsvPath "path/to/your/data.csv"
+so there would not be mistakes with the API URL
    
 
 ## CSV Format
@@ -33,7 +34,7 @@ None
 |---------------------|-----------------------------------------------------------------------------------------------|
 | CloudProviderName  | Name of the cloud provider to create                                                     |
 | TeamId              | ID of the team that owns the cloud provider                                                  |
-| AuthorizedTeamId    | (Optional) Comma-separated list of authorized teams                                 |
+| AuthorizedTeamId    | (Optional) semicolon-separated list of authorized teams                                 |
 | CloudProviderType   | Type of cloud provider (e.g., AWS, Azure)                                                    |
 | AWSRole             | (For AWS providers) IAM role for accessing AWS                                          |
 | AWSAccountId        | (For AWS providers) AWS account ID                                                      |
