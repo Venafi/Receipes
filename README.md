@@ -1,73 +1,59 @@
-# CreateCP-KS.ps1
+## Venafi TLS Protect Cloud Automation Recipes
 
-## Purpose
+**Purpose:**
 
-This PowerShell script automates the creation of cloud providers and cloud keystores within a Venafi platform. It utilizes GraphQL mutations to interact with the Venafi platform and reads configuration data from a provided CSV file.
+This repository facilitates the automation of common Venafi TLS Protect Cloud operations through user-submitted recipes. Each recipe is a standalone script written in Python, PowerShell, Bash, or other compatible languages, empowering you to streamline repetitive tasks and optimize your workflows.
 
-## Author
+**Contributing Recipes:**
 
-Venafi, Inc.
+We welcome your contributions! To share your valuable automation expertise, kindly adhere to these guidelines:
 
-## Requirements
+**File Naming:**
 
-* PowerShell version 3.0 or later
-* Venafi API credentials (TPPLApiKey)
+* Use a descriptive name that accurately reflects the recipe's function (e.g., `renew_certificates_in_bulk.py`).
+* Append the script's file extension (`.py`, `.ps1`, `.sh`, etc.).
 
-## Dependencies
+**Content Structure:**
 
-None
+* **Header:**
+    * Brief comments outlining the recipe's purpose, supported Venafi TLS Protect Cloud versions, and any prerequisites.
+    * Indicate the language the script is written in (e.g., `#!/bin/bash`).
+* **Script Body:**
+    * Clear, well-structured code with meaningful variable names and comments.
+    * Employ Venafi TLS Protect Cloud API calls appropriately, ensuring authentication (refer to the API documentation for guidance).
+    * **Error handling:**
+        * Incorporate robust error handling mechanisms to catch and report issues gracefully.
+        * Provide informative error messages to aid troubleshooting.
+* **Additional Comments:**
+    * If necessary, include usage instructions or explanations within the script.
 
-## Usage
+**Testing and Validation:**
 
-1. Update the script with your API URL and API key.
-2. Prepare a CSV file with the required configuration data (see CSV format below).
-3. Run the script with the following parameters:
+* Thoroughly test your recipe in a non-production environment before submitting.
+* Ensure it functions as intended, generates no errors, and doesn't disrupt existing configurations.
 
-   ```powershell
-   ./CreateCP-KS.ps1 -ApiUrl "https://api.venafi.cloud/graphql" -TPPLApiKey "your_api_key" -CsvPath "path/to/your/data.csv"
-so there would not be mistakes with the API URL
-   
+**Pull Request:**
 
-## CSV Format
+* Create a new pull request, attaching your recipe file.
+* Briefly describe your contribution and any noteworthy aspects.
 
-| Column Name        | Description                                                                          |
-|---------------------|-----------------------------------------------------------------------------------------------|
-| CloudProviderName  | Name of the cloud provider to create                                                     |
-| TeamId              | ID of the team that owns the cloud provider                                                  |
-| AuthorizedTeamId    | (Optional) semicolon-separated list of authorized teams                                 |
-| CloudProviderType   | Type of cloud provider (e.g., AWS, Azure)                                                    |
-| AWSRole             | (For AWS providers) IAM role for accessing AWS                                          |
-| AWSAccountId        | (For AWS providers) AWS account ID                                                      |
-| CkName              | (Optional) Name of the cloud keystore to create                                            |
-| CkTeamId            | (Optional) ID of the team that owns the keystore                                            |
-| CkAuthorizedTeamId  | (Optional) Comma-separated list of authorized teams for the keystore |
-| AcmRegions          | (Optional) Comma-separated list of ACM regions                                         |
+**Running Recipes:**
 
-## Output
+1. **Locate the desired recipe:** Browse the repository to find the script that aligns with your automation needs.
+2. **Download the script:** Save the recipe file locally.
+3. **Modify as needed:** Review the script's comments and documentation. Make any necessary adjustments based on your environment or requirements.
+4. **Execution:**
+    * **CLI Execution:** For scripts intended to be run from the command line, ensure you have the required Python, PowerShell, or Bash environment set up. Open a terminal, navigate to the recipe's location, and execute the script using its appropriate command (e.g., `python <recipe_name>.py`).
+    * **Integration:** If the script is designed to be integrated into automated workflows or external tools, follow the specific instructions provided in the recipe's comments or documentation.
 
-The script will print messages to the console indicating the progress of the operations:
+**Additional Notes:**
 
-* Successful creation of cloud providers and keystores will be displayed with their IDs and names.
-* Any errors or failures will also be displayed.
+* This repository serves as a community-driven resource. Please treat others with respect and maintain a productive atmosphere.
+* While we strive to review submissions promptly, the process may take some time depending on the volume of contributions.
+* We reserve the right to decline recipes that don't adhere to the guidelines or pose potential security or privacy risks.
 
-## Error Handling
+**Contributing:**
 
-The script includes basic error handling for API calls and CSV parsing. Detailed error messages are displayed to the console.
-
-## License
-
-Copyright (c) 2024 Venafi, Inc. All rights reserved. Additional license terms may apply.
-
-## Important Notes
-
-* The script is provided "as is" without warranty of any kind.
-* Modification of the script is only allowed to update configuration details.
-* Sharing of this script or its contents without consent from Venafi is prohibited.
-
-## Troubleshooting
-
-* Double-check the API URL, API key, and CSV file path.
-* Ensure the CSV file is formatted correctly.
-* Refer to the Venafi documentation for more information on AWS integration
+By sharing your recipes, you're helping fellow Venafi TLS Protect Cloud users streamline their operations and save valuable time. Your contributions are truly appreciated!
 
 
