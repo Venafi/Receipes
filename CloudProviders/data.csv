@@ -1,4 +1,3 @@
 cloudProviderName,teamId,authorizedTeamId,cloudProviderType,awsRole,awsAccountId,ckName,ckTeamId,ckAuthorizedTeamId,acmRegions
-Demo AWS Cloud Provider,d00ae6c0-ae0c-11ee-9ae9-456cfae2f359,d0a32f20-ae0c-11ee-9ae9-456cfae2f359;d0a41980-ae0c-11ee-9ae9-456cfae2f359,AWS,vaas-auto-do-not-delete,334114465092,DemoCK,d8ac38b0-ae0c-11ee-9ae9-456cfae2f359,d8d1c210-ae0c-11ee-9ae9-456cfae2f359;d8ac38b0-ae0c-11ee-9ae9-456cfae2f359;d85e18b0-ae0c-11ee-9ae9-456cfae2f359,us-east-1;us-east-2;us-west-1;us-west-2;eu-west-1;eu-west-2;eu-west-3;ap-northeast-1;ap-northeast-2;ap-northeast-3
-DemoCP-1,d00ae6c0-ae0c-11ee-9ae9-456cfae2f359,"d0a41980-ae0c-11ee-9ae9-456cfae2f359",AWS,DemoRole,334114465000,DemoCK,d8ac38b0-ae0c-11ee-9ae9-456cfae2f359,"",us-east-1
-DemoCP-2,d00ae6c0-ae0c-11ee-9ae9-456cfae2f359,"",AWS,DemoRole2,334114465001
+Example AWS Cloud Provider,d00ae6c0-ae0c-11ee-9ae9-456cfae2f359,d0a32f20-ae0c-11ee-9ae9-456cfae2f359;d0a41980-ae0c-11ee-9ae9-456cfae2f359,AWS,vaas-auto-do-not-delete,123456789012,DemoCK,d8ac38b0-ae0c-11ee-9ae9-456cfae2f359,d8d1c210-ae0c-11ee-9ae9-456cfae2f359;d8ac38b0-ae0c-11ee-9ae9-456cfae2f359;d85e18b0-ae0c-11ee-9ae9-456cfae2f359,us-east-1;us-east-2;us-west-1;us-west-2
+
